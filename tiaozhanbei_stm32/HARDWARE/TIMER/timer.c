@@ -134,7 +134,7 @@ void go(float vx, float vw)
 	 if(motor_left_vel >0) 
 	 {
 		 pwm_count_left = (1900-1525)*motor_left_vel*5+1525;
-		 if(pwm_count_left >= 1700) pwm_count_left=1900;
+		 if(pwm_count_left >= 1900) pwm_count_left=1900;
 	 }else if(motor_left_vel < 0)
 	 {
 		 pwm_count_left = (1475-1100)*motor_left_vel*5 +1475;
